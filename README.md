@@ -20,6 +20,8 @@ We follow the method outlined in Chapter 4 in the textbook "_Quantum Computation
 
 The basic idea is shown in the schematic figure with $5$ control qubits as an example (Figure 4.10. in the textbook). <img src="https://github.com/user-attachments/assets/54c503e9-53ab-43c7-9dde-31f1429a596e" width="700" height="400" />
 
+The chain of Toffoli gates for successive pairs of one control qubit and one ancillary qubit makes sure that the last ancillary qubit is $|1\rangle $ only when all the control qubits are $|1\rangle$. After applying the single controlled $U$ gate, controlled by the last ancillary qubit, one needs to reverse all the Toffoli gates so that the ancillary qubits return to their original states $|0\rangle$.  
+
 **For general $n$ control qubits, one needs $n-1$ ancillary qubits. There are $2(n-1)$ Toffoli gates and a single-controlled-U gate in the construction.** 
 
 #### Toffoli gate:
