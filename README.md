@@ -40,7 +40,9 @@ This is because for a general $2\times 2$ unitary matrix $U$, it can be decompos
 
 It is also been explicitly proved in the textbook that the unitary matrix $U$ can also be expressed as $U =  e^{i\alpha} AXBXC$ with $A = R_z(\beta) R_y(\gamma/2)$, $B=R_y(-\gamma/2)R_z(-(\delta+\beta)/2)$, $C=R_z((\delta-\beta)/2)$. Here $X$ is the Pauli $X$ matrix. 
 
-**In the Jupyter notebook, I implement the Toffoli gate, the single controlled U gate and then the multi-controlled U gate.**
+### Implementation in the Jupyter notebook
+
+In the Jupyter notebook, I implement the Toffoli gate, the single controlled U gate and then the multi-controlled U gate.
 
 In fact, in Qiskit, for arbitrary given $2\times 2$ unitary matrix $U$, one can construct multi-controlled U gate using the gate method _".control(n)"_. The codes are tested against this built-in method for arbitrary unitary matrix $U$ and some representative input qubits. 
 
